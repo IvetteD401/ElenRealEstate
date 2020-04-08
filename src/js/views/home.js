@@ -1,11 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import rigoImage from "../../img/rigo-baby.jpg";
+
 import "../../styles/home.scss";
 
 export const Home = () => (
-	<div className="text-center mt-5">
-		<main role="main" className="inner cover">
+	<div className="text-center mt-5 mx-auto">
+		<main role="main" className="inner cover ">
 			<h1 className="cover-heading mt-15">Elen Real Estate Co., LLC.</h1>
 			<p className="lead">Manage payments. View available propeties. and much more!</p>
 			<p className="lead">
@@ -14,6 +14,7 @@ export const Home = () => (
 						Sign In
 					</a>
 				</Link>
+				<br />
 				<Link to="/signup">Sign up here!</Link>
 			</p>
 		</main>
