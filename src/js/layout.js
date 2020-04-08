@@ -3,7 +3,11 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 import ScrollToTop from "./component/scrollToTop";
 
 import { Home } from "./views/home";
-import { Demo } from "./views/demo";
+import { Welcome } from "./views/welcome";
+import { Signup } from "./views/signup";
+import { Signin } from "./views/signin";
+import { Properties } from "./views/properties";
+import { Contact } from "./views/contact";
 import { Single } from "./views/single";
 import injectContext from "./store/appContext";
 
@@ -23,7 +27,11 @@ export const Layout = () => {
 					<Navbar />
 					<Switch>
 						<Route exact path="/" component={Home} />
-						<Route path="/demo" component={Demo} />
+						<Route path="/welcome" component={Welcome} />
+						<Route path="/signup" component={Signup} />
+						<Route path="/signin" component={Signin} />
+						<Route path="/contact" component={Contact} />
+						<Route path="/properties" component={Properties} />
 						<Route path="/single/:theid" component={Single} />
 						<Route render={() => <h1>Not found!</h1>} />
 					</Switch>
